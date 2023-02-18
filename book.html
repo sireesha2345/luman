@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Booking Page</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<!--    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+    <style>
+        *{
+    box-sizing: border-box;
+}
+.container{
+    border: 2px solid white;
+    background-color: black;
+    
+}
+.container .heading{
+    padding: 20px;
+/*     background-color:grey;*/
+}
+.container .heading h1{
+    font-size:5em;
+    color: burlywood;
+    font-weight: bold;
+    text-align: center;
+}
+.container .heading p{
+    text-align: center;
+    color: orange;
+    font-size:20px;
+    
+}
+#selectcategory {
+    color:black;
+    padding: 7px;
+    border-radius: 10px;
+}
+#selectcategory option{
+    background-color: black;
+    
+}
+
+input{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding:7px;
+}
+label{
+    color: beige;
+    font-size:16px;
+}
+.pricing{
+/*    background-color: dimgrey;*/
+}
+.pricing h1{
+     
+    color: burlywood;
+    font-weight: bold;
+}
+
+.payment h1{
+     color: burlywood;
+     font-weight: bold;
+}
+.termsofagreement h1{
+     color: burlywood;
+     font-weight: bold;
+}
+.travel h1{
+     color: burlywood;
+     font-weight: bold;
+}
+.travel p{
+    color: orange;
+}
+ p{
+    color: orange;
+    
+}
+h3{
+    color: white;
+}
+    </style>
+</head>
+
+
+<body>
+
+ 
+<div class="main">
+    <form id="eventbookingpage">
+<div class="container">
+
+  <div class="heading"> 
+    <h1>Booking Agreement</h1>
+    <i><p>Complete form below to retain the services.</p>
+</i>
+    </div>
+    
+    <hr>
+    <div class="bookingform">
+        <h6>For Direct Inquiries contact () at example@example.com or call (000) 000-0000</h6>
+        
+  
+   
+    <label for="selectcategory"> I want (this artist) for a...</label><br>
+    <select class="form-select" aria-label="Default select example" id="selectcategory">
+  <option selected>Open this select menu</option>
+  <option value="1">Musical Performance</option>
+  <option value="2">Guest Apperance</option>
+  <option value="3">Guest speaker</option>
+  <option value="4">Panel Discussion</option>
+  <option value="5">Voice-Over</option>
+  <option value="5">Customer Produced Intrumental</option>
+</select>
+   
+   <br>
+   <label for="date">Event Date:</label><br>
+   <input type="date" id="date" placeholder="Enter date">
+   <br>
+   
+   <label for="time">Event time:</label><br>
+   <input type="time" id="time" placeholder="Select Time">
+   <br>
+   <label for="nameofevent">Name of Event *</label><br>
+   
+   <input type="text" id="nameofevent">
+   <br>
+    <label for="nameofvenue">Name of venue *</label><br>
+   <input type="text" id="nameofvenue">
+    <br>
+    <label for="venueaddress">Venue Address *</label><br>
+   <input type="text" id="venueaddress">
+    <br>
+    <label for="city">City</label><br>
+   <input type="text" id="city"><br>
+    <label for="state">State/Provinance</label><br>
+   <input type="text" id="state"><br>
+    <label for="postal">Postal/Zip code</label><br>
+   <input type="text" id="postal"><br>
+   <label for="country">Country</label>
+   <br>
+   <input id="country">
+   
+   
+   <br>
+   <label for="name">Enter Your Full Name *</label>
+   <br>
+   <input type="text" id="name" placeholder="enter full name">
+   
+   <br>
+   <label for="email">Email *</label>
+   <br>
+   <input  type="email" id="email" placeholder="enter email">
+   
+   <br>
+   <label for="phone">Email *</label>
+   <br>
+   <input  type="number" id="phone" placeholder="Enter mobile number">
+   
+</div>
+
+
+<div class="pricing"> 
+    <h1>Honorarium Pricing</h1>
+    <i><p>Prices based on performance length and do not include travel cost.</p></i>
+</div>
+    <hr>
+    
+    
+     <div class="checkbox">Please select the option
+            <div class="form-group">
+                <label for="checkbox1">
+           <input type="checkbox" id="checkbox1" value="value1" >
+                Guest Speakers $250.00
+                </label>
+            </div>
+            
+            <div class="from-group">  
+                <label for="checkbox2">
+           <input type="checkbox" id="checkbox2" value="value2" >
+                15-minute Perfromances $350.00
+                </label>
+            </div>
+            <br>
+            
+            <div class="form-group">
+                <label for="checkbox3">
+           <input type="checkbox" id="checkbox3" value="value3">
+                 30-minute Perfromances $800.00
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="checkbox3">
+           <input type="checkbox" id="checkbox3" value="value3">
+                60-minute Performance$800.00
+                </label>
+            </div><div class="form-group">
+                <label for="checkbox3">
+           <input type="checkbox" id="checkbox3" value="value3">
+                Radio/Internet VoiceOver(7min max includes Sound Fx & Music upon request)$99.99
+                </label>
+            </div>
+               <div class="form-group">
+                <label for="checkbox3">
+           <input type="checkbox" id="checkbox3" value="value3">
+                Custom Produced Instrumental w/Trackout & Exclusive Rights$999.99
+
+                 </label>
+            </div>
+           
+            <div class="form-group">
+                <label for="checkbox3">
+           <input type="checkbox" id="checkbox3" value="value3">
+              Other arrangements(Explan below)
+                 </label>
+            </div>
+            <textarea rows="10" cols="50" placeholder="Other"></textarea>
+            
+            <p>A 50% Non-refundable Deposit is required to guarantee Performance/Speaking date.*</p>
+            
+             <div class="form-group">
+                <label for="checkbox3">
+           <input type="checkbox" id="checkbox3" value="value3">
+                
+        I will send a check made payable to ...
+                 </label>
+            </div>
+            
+             <div class="form-group">
+                <label for="checkbox3">
+           <input type="checkbox" id="checkbox3" value="value3">
+            Email me an invoice via Paypal
+                 </label>
+            </div>
+             <p>For performances, (the artist) requires the following equipment. Please check all that you will supply.*</p>
+            
+             <div class="form-group">
+                <label for="checkbox3">
+           <input type="checkbox" id="checkbox3" value="value3">
+                
+        Full Professional Quality Drum Set w/headphones connected to house mix/CD player
+                 </label>
+            </div>
+            <div class="form-group">
+                <label for="checkbox3">
+           <input type="checkbox" id="checkbox3" value="value3">
+            2 Microphones
+                 </label>
+            </div>
+            <div class="form-group">
+                <label for="checkbox3">
+           <input type="checkbox" id="checkbox3" value="value3">
+            Visual Display Screens
+                 </label>
+            </div>
+             <div class="form-group">
+                <label for="checkbox3">
+           <input type="checkbox" id="checkbox3" value="value3">
+            Professional Quality Sound Systems with Speakers and Monitors
+                 </label>
+            </div>
+            <div class="form-group">
+                <label for="checkbox3">
+           <input type="checkbox" id="checkbox3" value="value3">
+            N/A VoiceOver/Production Request
+                 </label>
+            </div>
+            
+ </div>
+ 
+ <div class="travel"> 
+    <h1>Travel Arrangements</h1>
+    </div>
+    <hr>
+    <div class="checkbox"><p>Please select the option *</p>
+            <div class="form-group">
+                <label for="checkbox1">
+           <input type="checkbox" id="checkbox1" value="value1" >
+                
+This event is in Hampton Roads, Virginia
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="checkbox1">
+           <input type="checkbox" id="checkbox1" value="value1" >
+                
+This event is outside of Hampton Roads. Email me a travel estimate.
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="checkbox1">
+           <input type="checkbox" id="checkbox1" value="value1" >
+                
+N/A Voiceover/Production Request.
+                </label>
+            </div>
+    </div>
+    
+
+   <div class="payment"> 
+    <h1>Payment Terms</h1>
+    <i><p>Please check to show your understanding and agreement with the terms below</p></i>
+</div>
+    <hr>
+    <div class="checkbox"><p>Consirm agreement by selecting both *</p>
+            <div class="form-group">
+                <label for="checkbox1">
+           <input type="checkbox" id="checkbox1" value="value1" >
+                I agree to pay in full all financial obligations including travel expenses due to Artist Music prior to his performance.
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="checkbox1">
+           <input type="checkbox" id="checkbox1" value="value1" >
+                I agree to make checks payable to ..
+                </label>
+            </div>
+   
+     <div class="termsofagreement"> 
+    <h1>Terms of Agreement</h1>
+
+</div>
+    <hr>
+        <div class="checkbox"><p>Check to agree with terms *</p>
+            <div class="form-group">
+                <label for="checkbox1">
+           <input type="checkbox" id="checkbox1" value="value1" >
+               This contract is for the personal services of (artist) made between you(“purchaser") and ... ("artist") for the event described. The artist agrees to so perform according to the terms and conditions listed.
+                </label>
+            </div>
+        </div>
+        
+        
+        <div class="footer"> 
+        <p>Signature</p>
+          <textarea rows="3" cols="25" placeholder=" Sign"></textarea>
+        </div>
+     </div>
+    <center><button type="submit" class="btn btn-lg btn-info">Submit</button> </center>
+    </div>
+    </form>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    
+    
+    </body>
+</html>

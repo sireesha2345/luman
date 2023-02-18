@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Management Page</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<style>
+    body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #ffffff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+section {
+	width: 45%;
+}
+
+section h2 {
+	margin-bottom: 10px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+form input, form textarea {
+	padding: 5px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+form button {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+</style>
+<body>
+	<header>
+		<h1>Event Management</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Create an Event</h2>
+			<form>
+				<label for="event-name">Event Name:</label>
+				<input type="text" id="event-name" name="event-name" required><br>
+
+				<label for="event-date">Event Date:</label>
+				<input type="date" id="event-date" name="event-date" required><br>
+
+				<label for="event-time">Event Time:</label>
+				<input type="time" id="event-time" name="event-time" required><br>
+
+				<label for="event-location">Event Location:</label>
+				<input type="text" id="event-location" name="event-location" required><br>
+
+				<label for="event-description">Event Description:</label>
+				<textarea id="event-description" name="event-description" required></textarea><br>
+
+				<button type="submit" onclick="createEvent()">Create Event</button>
+			</form>
+		</section>
+		<section>
+			<h2>Upcoming Events</h2>
+			<ul id="event-list">
+				<li>Event 1 - April 1, 2023</li>
+				<li>Event 2 - April 15, 2023</li>
+				<li>Event 3 - May 1, 2023</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Event Management</p>
+	</footer>
+    <script>
+        function createEvent() {
+    event.preventDefault(); // prevent form submission
+  
+    // get input values
+    var eventName = document.getElementById("event-name").value;
+    var eventDate = document.getElementById("event-date").value;
+    var eventTime = document.getElementById("event-time").value;
+    var eventLocation = document.getElementById("event-location").value;
+    var eventDescription = document.getElementById("event-description").value;
+  
+    // perform some action with the input values
+    console.log("New event created: " + eventName);
+    console.log("Date: " + eventDate + ", Time: " + eventTime);
+    console.log("Location: " + eventLocation);
+    console.log("Description: " + eventDescription);
+  }
+    </script>
+</body>
+</html>
